@@ -1021,10 +1021,4 @@ Calculator.prototype.removeTimer = function() {
 
 
 
-// Is app installed?
-if ((window.navigator.hasOwnProperty('standalone') && window.navigator.standalone) || devmode) {
 	var calculator = new Calculator();
-}
-else {
-	document.body.setAttribute('class', 'install');
-}
